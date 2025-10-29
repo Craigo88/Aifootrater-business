@@ -32,17 +32,12 @@
         }
 
         .title-container {
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             margin-bottom: 20px;
         }
 
         .logo {
-            position: absolute;
-            left: 50%;
-            transform: translateX(calc(-50% - 200px));
+            display: block;
+            margin: 0 auto 30px auto;
             width: 80px;
             height: 80px;
             object-fit: contain;
@@ -178,17 +173,10 @@
                 text-align: left;
             }
 
-            .title-container {
-                flex-direction: column;
-                gap: 15px;
-            }
-
             .logo {
-                position: relative;
-                left: auto;
-                transform: none;
                 width: 60px;
                 height: 60px;
+                margin-bottom: 20px;
             }
 
             h1 {
@@ -200,9 +188,10 @@
 <body>
     <div class="container">
         <div class="title-container">
-            <img src="logo.png" alt="AI Foot Rater Logo" class="logo">
             <h1>AI FOOT RATER</h1>
         </div>
+
+        <img src="logo.png" alt="AI Foot Rater Logo" class="logo">
 
         <div>
             <div class="app-store-button">
