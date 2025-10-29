@@ -32,14 +32,17 @@
         }
 
         .title-container {
+            position: relative;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
             margin-bottom: 20px;
         }
 
         .logo {
+            position: absolute;
+            left: 50%;
+            transform: translateX(calc(-50% - 200px));
             width: 80px;
             height: 80px;
             object-fit: contain;
@@ -51,6 +54,8 @@
             font-weight: bold;
             color: white;
             line-height: 1.1;
+            text-align: center;
+            margin: 0;
         }
 
         .tagline {
@@ -179,6 +184,9 @@
             }
 
             .logo {
+                position: relative;
+                left: auto;
+                transform: none;
                 width: 60px;
                 height: 60px;
             }
