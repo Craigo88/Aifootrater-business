@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Bored Again - Mobile App Development Company creating innovative AI-powered mobile experiences">
-    <title>Bored Again - Mobile App Development</title>
+    <meta name="description" content="AI Foot Rater - Mobile App Development Company creating innovative AI-powered mobile experiences">
+    <title>AI Foot Rater - Mobile App Development</title>
     <style>
         * {
             margin: 0;
@@ -13,9 +13,9 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: white;
-            color: #333;
+            font-family: Helvetica, Arial, sans-serif;
+            background: #00BFFF;
+            color: white;
             line-height: 1.6;
             min-height: 100vh;
             display: flex;
@@ -31,21 +31,33 @@
             text-align: center;
         }
 
+        .title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
         h1 {
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 72px;
             font-weight: bold;
-            margin-bottom: 20px;
-            background: linear-gradient(to right, #ff6b6b, #ff8e53, #ff6b9d);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: white;
             line-height: 1.1;
         }
 
         .tagline {
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 28px;
             font-weight: 600;
-            color: #333;
+            color: white;
             margin-bottom: 60px;
         }
 
@@ -53,11 +65,12 @@
             display: inline-flex;
             align-items: center;
             gap: 12px;
-            background: #000;
-            color: white;
+            background: white;
+            color: #00BFFF;
             padding: 16px 32px;
             border-radius: 8px;
             text-decoration: none;
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 18px;
             font-weight: 500;
             margin-bottom: 80px;
@@ -67,7 +80,7 @@
         }
 
         .app-store-button:hover {
-            background: #333;
+            background: #f0f0f0;
         }
 
         .app-store-button svg {
@@ -77,9 +90,11 @@
         }
 
         .coming-soon {
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 14px;
-            color: #666;
+            color: white;
             margin-top: 8px;
+            opacity: 0.9;
         }
 
         section {
@@ -91,53 +106,57 @@
         }
 
         section h2 {
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 28px;
             font-weight: 600;
-            color: #333;
+            color: white;
             margin-bottom: 16px;
         }
 
         section p {
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 18px;
-            color: #555;
+            color: white;
             line-height: 1.8;
             margin-bottom: 12px;
         }
 
         section a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        section a:hover {
+            color: white;
             text-decoration: underline;
         }
 
+        section a:hover {
+            opacity: 0.8;
+        }
+
         .contact-info {
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 18px;
-            color: #555;
+            color: white;
             line-height: 2;
         }
 
         .contact-info strong {
-            color: #333;
+            color: white;
         }
 
         footer {
             margin-top: 60px;
             padding-top: 30px;
-            border-top: 1px solid #e0e0e0;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 14px;
         }
 
         footer a {
-            color: #666;
+            color: white;
             text-decoration: none;
             margin: 0 12px;
         }
 
         footer a:hover {
-            color: #333;
+            opacity: 0.8;
             text-decoration: underline;
         }
 
@@ -153,12 +172,29 @@
             section {
                 text-align: left;
             }
+
+            .title-container {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>BORED AGAIN</h1>
+        <div class="title-container">
+            <img src="logo.png" alt="AI Foot Rater Logo" class="logo">
+            <h1>AI FOOT RATER</h1>
+        </div>
         <p class="tagline">Mobile App Development</p>
 
         <div>
@@ -174,7 +210,7 @@
         <section>
             <h2>About Us</h2>
             <p>
-                Bored Again is a mobile application development company 
+                AI Foot Rater is a mobile application development company 
                 focused on creating innovative, AI-powered mobile experiences. 
                 We specialize in developing consumer applications that leverage 
                 cutting-edge technology to provide value to users.
@@ -188,15 +224,6 @@
                     <strong>Email:</strong> 
                     <a href="mailto:support@aifootrater.com">support@aifootrater.com</a>
                 </p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Business Information</h2>
-            <div class="contact-info">
-                <p><strong>Business Name:</strong> Bored Again</p>
-                <p><strong>Registered in:</strong> Australia</p>
-                <p><strong>Legal Structure:</strong> Sole Trader</p>
             </div>
         </section>
 
